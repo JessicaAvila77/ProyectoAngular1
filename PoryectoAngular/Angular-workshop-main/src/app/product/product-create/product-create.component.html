@@ -1,0 +1,21 @@
+
+<form [formGroup]="form" (ngSubmit)="crearProducto()">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" class="form-control" formControlName="nombre">
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="number" id="precio" class="form-control" formControlName="precio">
+    </div>
+    <div class="form-group">
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" class="form-control" formControlName="cantidad">
+    </div>
+    
+   
+
+    <button class="form-button" type ="submit">Guardar producto</button>
+
+
+</form>

@@ -1,0 +1,12 @@
+<button class="form-button" (click)="navegarUsuario()">Crear Usuario</button>
+
+<div class="list" *ngFor="let user of users">
+    <p class="list-item">{{user.id}}</p>
+    <p class="list-item">{{user.nombre}}</p>
+    <a (click)="llevameAlDetalle(user.id)" class="list-link">Ver Detalle</a>
+    <a (click)="editarUsuario(user.id)" class="list-link-editar">Editar usuario</a>
+    <a (click)="eliminarUsuario(user.id)" class="list-link-delete">Borrar usuario</a>
+  
+  </div>
+
+  <button class="form-button" type="button" (click)="regresar()">Regresar</button>

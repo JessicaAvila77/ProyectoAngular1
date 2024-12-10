@@ -1,0 +1,12 @@
+<button class="form-button" (click)="navegarProducto()">Crear Producto</button>
+
+<div class="list" *ngFor="let product of products">
+    <p class="list-item">{{product.id}}</p>
+    <p class="list-item">{{product.nombre}}</p>
+    <a (click)="llevameAlDetalle(product.id)" class="list-link">Ver Detalle</a>
+    <a (click)="editarProducto(product.id)" class="list-link-editar">Editar producto</a>
+    <a (click)="eliminarProducto(product.id)" class="list-link-delete">Borrar producto</a>
+  
+  </div>
+
+  <button class="form-button" type="button" (click)="regresar()">Regresar</button>
